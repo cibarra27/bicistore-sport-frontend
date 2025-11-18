@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>BiciStore Sport | Carrito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="logo">BiciStore <span>Sport</span></div>
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="carrito.html" class="active">Carrito</a>
+    <a href="login.html">Admin</a>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>Tu carrito</h1>
+  <section id="cartItems" class="cart-items"></section>
+
+  <section class="cart-summary">
+    <div>
+      <p>Total: <span id="cartTotal">$0</span></p>
+    </div>
+    <button id="checkoutBtn" class="btn-primary">Finalizar pedido</button>
+  </section>
+
+  <section class="checkout-form">
+    <h2>Datos de contacto</h2>
+    <form id="orderForm" class="form">
+      <label>Nombre
+        <input type="text" id="customerName" required />
+      </label>
+      <label>Email
+        <input type="email" id="customerEmail" required />
+      </label>
+    </form>
+    <p class="note">Demo educativa: el pago no es real, solo se registra el pedido en la API.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> BiciStore Sport.</p>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

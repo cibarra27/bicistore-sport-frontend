@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>BiciStore Sport | Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="logo">BiciStore <span>Sport</span> Admin</div>
+  <nav class="nav">
+    <a href="catalogo.html">Ver catálogo</a>
+    <a href="#" id="logoutBtn">Cerrar sesión</a>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>Administración de productos</h1>
+
+  <section class="form-section">
+    <form id="productForm" class="form">
+      <input type="hidden" id="productId" />
+      <label>Nombre
+        <input type="text" id="name" required />
+      </label>
+      <label>Marca
+        <input type="text" id="brand" required />
+      </label>
+      <label>Categoría
+        <select id="category" required>
+          <option value="bicicletas">Bicicletas</option>
+          <option value="componentes">Componentes</option>
+          <option value="accesorios">Accesorios</option>
+        </select>
+      </label>
+      <label>Precio (CLP)
+        <input type="number" id="price" min="0" required />
+      </label>
+      <label>Stock
+        <input type="number" id="stock" min="0" required />
+      </label>
+      <label>Imagen (URL)
+        <input type="url" id="imageUrl" />
+      </label>
+      <label>Descripción
+        <textarea id="description" rows="3"></textarea>
+      </label>
+      <button type="submit" class="btn-primary">Guardar</button>
+      <button type="button" id="resetBtn" class="btn-secondary">Limpiar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Listado de productos</h2>
+    <table class="table" id="productsTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Marca</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- filas por JS -->
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> BiciStore Sport.</p>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/admin.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>BiciStore Sport | Catálogo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="logo">BiciStore <span>Sport</span></div>
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html" class="active">Catálogo</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="login.html">Admin</a>
+  </nav>
+</header>
+
+<main class="page">
+  <h1>Catálogo de productos</h1>
+  <section class="filters">
+    <input type="text" id="search" placeholder="Buscar por nombre o marca..." />
+    <select id="categoryFilter">
+      <option value="">Todas las categorías</option>
+      <option value="bicicletas">Bicicletas</option>
+      <option value="componentes">Componentes</option>
+      <option value="accesorios">Accesorios</option>
+    </select>
+  </section>
+  <section id="productsGrid" class="products-grid">
+    <!-- Productos por JS -->
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> BiciStore Sport.</p>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/catalogo.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
